@@ -1,0 +1,33 @@
+Inicio pseudocodigoEjercicio7
+	
+	Variable pares = 0
+	Variable impares = 0
+	Variable ceros
+	Variable auxiliar
+	Variable i
+	Variable porcentaje
+	
+	Desde i=0; hasta i<15; i = i+1
+		auxiliar = ruleta(0,36)
+		
+		Si (auxiliar%2 == 0) hacer
+			pares = pares + 1
+		FinSi
+		Sino (auxiliar == 0) hacer
+			ceros = ceros + 1
+		FinSino
+		Sino
+			impares = impares + 1
+		FinSino
+	FinDesde
+	
+	porcentaje = pares * (100/15)
+	Escribir "Hay un " + porcentaje + "% de numeros pares"
+	
+	porcentaje = impares * (100/15)
+	Escribir "Hay un " + porcentaje + "% de numeros impares"
+	
+	porcentaje = ceros * (100/15)
+	Escribir "Hay un " + porcentaje + "% de numeros ceros"
+	
+Fin
